@@ -63,7 +63,7 @@ public class Calculator extends Application {
 		grid.getChildren().addAll(num1Field, num2Field, resultLabel, addButton, subtractButton, multiplyButton, divideButton);
 
 		// Create the scene (the window’s content)
-		Scene scene = new Scene(grid, 300, 200);
+		Scene scene = new Scene(grid, 400, 400);
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}

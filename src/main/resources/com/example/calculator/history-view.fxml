@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.1"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.calculator.HistoryController"
+            prefWidth="300" prefHeight="400">
+
+    <children>
+        <Label layoutX="20" layoutY="20" text="Calculation History">
+            <font>
+                <Font size="16"/>
+            </font>
+        </Label>
+
+        <ListView fx:id="historyListView" layoutX="20" layoutY="50"
+                  prefWidth="260" prefHeight="280" />
+
+            <Button text="Clear History"  layoutX="43" layoutY="300" prefWidth="200" onAction="#clearHistory" />
+            <Button text="Close" layoutX="20" layoutY="350" prefWidth="260" onAction="#closeWindow" />
+
+
+    </children>
+</AnchorPane>

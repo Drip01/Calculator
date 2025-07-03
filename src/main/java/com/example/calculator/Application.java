@@ -10,9 +10,10 @@ public class Application extends javafx.application.Application {
 	@Override
 	public void start(Stage stage) throws IOException {
 		FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("hello-view.fxml"));
-		Scene scene = new Scene(fxmlLoader.load(), 300, 200);
+		Scene scene = new Scene(fxmlLoader.load(), 310, 440);
 		stage.setTitle("Welcome To The Calculator!");
 		stage.setScene(scene);
+		stage.setResizable(false);
 		stage.show();
 	}
 
